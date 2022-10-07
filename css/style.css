@@ -49,8 +49,9 @@ body {
 }
 
 .grid-wrap {
-    align-self: center;
-    justify-self: center;
+    align-self: left;
+    justify-self: left;
+    padding-left: 15vw;
     margin: 0, auto;
     max-width: 1300px;
     min-height: 98vh;
@@ -64,18 +65,45 @@ body {
 }
 
 .githublogo {
+    display: grid;
     padding-left: 1%;
     padding-top: 1%;
     z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    float: left;
+    top: 80vh;
+    left: 39vw;
+
     bottom: 0;
     right: 0;
+    min-width: 200px;
     transition: color .3s ease-in-out, filter .3s ease-in-out;
 }
 
+.linkedinlogo {
+    display: grid;
+    padding-left: 1%;
+    padding-top: 1%;
+    z-index: 5;
+    position: relative;
+    float: left;
+    top: 80.3vh;
+    left: 39vw;
+    
+    transition: color .3s ease-in-out, filter .3s ease-in-out;
+}
+
+#wrapper {
+    min-width: 500px;
+    display: block;
+    float: left;
+}
+
 .githublogo:hover {
+    filter: sepia(100%);
+}
+
+.linkedinlogo:hover {
     filter: sepia(100%);
 }
 
